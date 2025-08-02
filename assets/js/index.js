@@ -73,9 +73,14 @@ function resetImg() {
   pageImg.imageToDefault(img);
 }
 
+function nextPage() {
+  window.open('user-card.html', '_blank');
+}
+
 textButton.addEventListener('click', changeText);
 colorButton.addEventListener('click', changeColor);
 allButton.addEventListener('click', addBothFunctions(allButton));
+nextButton.addEventListener('click', nextPage);
 
 img.addEventListener('mouseenter', changeImg);
 img.addEventListener('mouseleave', resetImg);
