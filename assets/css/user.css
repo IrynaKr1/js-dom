@@ -66,3 +66,12 @@
   align-items: center;
   gap: 5px;
 }
+
+.fa-heart {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.fa-heart.liked {
+  color: red;
+}
