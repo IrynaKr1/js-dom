@@ -59,6 +59,7 @@ const user = new User(
 );
 
 const loadBtn = document.querySelector('.load');
+const userPhoto = document.querySelector('img');
 const userName = document.querySelector('.userName');
 const nickname = document.querySelector('.nickname');
 const birthDate = document.querySelector('.birthDate');
@@ -66,6 +67,7 @@ const faHeart = document.querySelector('.fa-heart');
 const likesCount = document.querySelector('.likesCount');
 
 function loadContent() {
+  userPhoto.src = user.profilePhoto;
   userName.textContent = user.fullName;
   nickname.textContent = user.nickname;
   birthDate.textContent = user.birthday.toISOString().split('T')[0];
