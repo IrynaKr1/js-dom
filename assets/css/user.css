@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+.userCard {
+  max-width: 400px;
+  width: 100%;
+  min-width: 250px;
+  margin: 50px auto;
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px black;
+  overflow: hidden;
+  text-align: center;
+  padding: 0 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.imgContainer {
+  width: 250px;
+  height: 250px;
+  margin: 1.5rem;
+}
+
+.imgContainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgb(191, 177, 177);
+}
+
+.userName {
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 5px;
+}
+
+.nickname {
+  padding: 5px;
+  margin: 15px;
+}
+
+.dateOfBirth,
+.birthDate {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
