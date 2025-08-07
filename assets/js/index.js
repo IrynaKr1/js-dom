@@ -79,7 +79,7 @@ function nextPage() {
 
 textButton.addEventListener('click', changeText);
 colorButton.addEventListener('click', changeColor);
-allButton.addEventListener('click', addBothFunctions(allButton));
+addBothFunctions(allButton);
 nextButton.addEventListener('click', nextPage);
 
 img.addEventListener('mouseenter', changeImg);
