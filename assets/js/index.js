@@ -16,8 +16,13 @@ class PageImg {
    * Creates an instance of PageImg with predefined default and hover images.
    * @constructor
    * @memberof PageImg
-   * @property {string} src = URL of the image
-   * @property {string} alt = Alt text for accessibility
+   * @property {Object} defaultImg - Default image configuration
+   * @property {string} defaultImg.src = URL of the Default image
+   * @property {string} defaultImg.alt = Hover image configuration
+   * @property {Object} hoverImg - Default image configuration
+   * @property {string} hoverImg.src = URL of the hoverImg image
+   * @property {string} hoverImg.alt = hoverImg image configuration
+   * 
    */
   constructor() {
     this.defaultImg = {
